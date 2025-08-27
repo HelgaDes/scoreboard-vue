@@ -1,0 +1,30 @@
+:root {
+  /* Design canvas size */
+  --design-width: 960;
+  --design-height: 540;
+  --scale: 1;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html, body, #app {
+  height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    background: #0D0D0E url('/bg-gradient.svg') no-repeat center center;
+    background-size: cover;
+}
+
+/* Helps avoid blurry text on some displays when scaled */
+.pixel-snap {
+  image-rendering: -webkit-optimize-contrast;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}

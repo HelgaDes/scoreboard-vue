@@ -1,0 +1,74 @@
+:root {
+    /* ==================== FONT FAMILY ==================== */
+    --font-sans: 'Oswald', sans-serif;
+
+    /* ==================== TYPOGRAPHY ==================== */
+    /* H1 */
+    --h1-size: 16px;
+    --h1-family: var(--font-sans);
+    --h1-weight: 500;
+    --h1-track: 0.5px;
+    --h1-line: 24px;
+
+    /* H2 */
+    --h2-size: 16px;
+    --h2-family: var(--font-sans);
+    --h2-weight: 400;
+    --h2-track: 0.25px;
+    --h2-line: 20px;
+
+    /* BodyMedium */
+    --body-md-size: 14px;
+    --body-md-family: var(--font-sans);
+    --body-md-weight: 400;
+    --body-md-track: 0.25px;
+    --body-md-line: 20px;
+
+    /* BodySmall */
+    --body-sm-size: 12px;
+    --body-sm-family: var(--font-sans);
+    --body-sm-weight: 400;
+    --body-sm-track: 0.25px;
+    --body-sm-line: 16px;
+
+    /* Label */
+    --label-size: 12px;
+    --label-family: var(--font-sans);
+    --label-weight: 400; /* undefined → regular */
+    --label-track: 0.25px;
+    --label-line: 16px;
+
+    /* Numbering */
+    --number-size: 20px;
+    --number-family: var(--font-sans);
+    --number-weight: 700;
+    --number-line: 32px;
+
+    /* ==================== COLORS ==================== */
+    --OnSurfaceVariant: #7b8592;
+    --SurfaceContainer: #242426;
+    --OnSurfaceContainer: #c4c7c5;
+    --OnSurface: #e3e3e3;
+    --Secondary: #253243;
+    --OnSecondary: #f6f7f7;
+    --SecondaryContainer: #1a2533;
+    --OnSecondaryContainer: #6e7f95;
+    --TertiaryContainer: #112026;
+    --OnTertiary: #f5f6f6;
+    --OnTertiaryContainer: #6b7d83;
+    --Placeholder: #8c9799;
+    --Tonalcontainer: rgba(10, 14, 20, 0.5);
+    --Outline: rgba(255, 255, 255, 0.07);
+    --SurfaceBlur: rgba(255, 255, 255, 0.12);
+    --OnSurfaceBlur: rgba(255, 255, 255, 0.04);
+
+    /* ==================== EFFECTS ==================== */
+    --shadow-1: 0 -0.318px 0.636px 0 rgba(255, 255, 255, 0.30) inset,
+    0 -0.318px 0.636px 0 rgba(255, 255, 255, 0.25) inset,
+    0.636px 0.955px 2.545px 0 rgba(0, 0, 0, 0.08) inset,
+    0.636px 0.955px 2.545px 0 rgba(0, 0, 0, 0.10) inset;
+
+    --shadow-2: 0 1.273px 2.545px 0 rgba(0, 0, 0, 0.10);
+
+    --blur-strong: blur(50px);
+}
