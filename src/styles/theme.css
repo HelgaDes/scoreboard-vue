@@ -1,74 +1,57 @@
 :root {
-    /* ==================== FONT FAMILY ==================== */
-    --font-sans: 'Oswald', sans-serif;
+  --font-sans: 'Oswald', sans-serif;
+  --h1-size: 16px; --h1-family: var(--font-sans); --h1-weight: 500; --h1-track: 0.5px; --h1-line: 24px;
+  --h2-size: 16px; --h2-family: var(--font-sans); --h2-weight: 400; --h2-track: 0.25px; --h2-line: 20px;
+  --body-md-size: 14px; --body-md-family: var(--font-sans); --body-md-weight: 400; --body-md-track: 0.25px; --body-md-line: 20px;
+  --body-sm-size: 12px; --body-sm-family: var(--font-sans); --body-sm-weight: 400; --body-sm-track: 0.25px; --body-sm-line: 16px;
+  --label-size: 12px; --label-family: var(--font-sans); --label-weight: 400; --label-track: 0.25px; --label-line: 16px;
+  --number-size: 20px; --number-family: var(--font-sans); --number-weight: 700; --number-line: 32px;
 
-    /* ==================== TYPOGRAPHY ==================== */
-    /* H1 */
-    --h1-size: 16px;
-    --h1-family: var(--font-sans);
-    --h1-weight: 500;
-    --h1-track: 0.5px;
-    --h1-line: 24px;
+  --OnSurfaceVariant:#7b8592; --SurfaceContainer:#242426; --OnSurfaceContainer:#c4c7c5; --OnSurface:#e3e3e3;
+  --Secondary:#253243; --OnSecondary:#f6f7f7; --SecondaryContainer:#1a2533; --OnSecondaryContainer:#6e7f95;
+  --TertiaryContainer:#112026; --OnTertiary:#f5f6f6; --OnTertiaryContainer:#6b7d83; --Placeholder:#8c9799;
+  --Tonalcontainer:rgba(10, 14, 20, 0.5); --Outline:rgba(255, 255, 255, 0.07);
+  --SurfaceBlur:rgba(255, 255, 255, 0.12); --OnSurfaceBlur:rgba(255, 255, 255, 0.04);
 
-    /* H2 */
-    --h2-size: 16px;
-    --h2-family: var(--font-sans);
-    --h2-weight: 400;
-    --h2-track: 0.25px;
-    --h2-line: 20px;
+  --shadow-1: 0 -0.318px 0.636px 0 rgba(255,255,255,0.30) inset,
+              0 -0.318px 0.636px 0 rgba(255,255,255,0.25) inset,
+              0.636px 0.955px 2.545px 0 rgba(0,0,0,0.08) inset,
+              0.636px 0.955px 2.545px 0 rgba(0,0,0,0.10) inset;
+  --shadow-2: 0 1.273px 2.545px 0 rgba(0,0,0,0.10);
+  --blur-strong: blur(50px);
+}
 
-    /* BodyMedium */
-    --body-md-size: 14px;
-    --body-md-family: var(--font-sans);
-    --body-md-weight: 400;
-    --body-md-track: 0.25px;
-    --body-md-line: 20px;
+/* ===== Derived tokens from CSV ===== */
+:root {
+  --container-padding-top: 70px; --container-padding-right: 67px; --container-padding-bottom: 70px; --container-padding-left: 36px;
+  --table-row-height: 40px; --table-row-gap: 1px;
+  --table-cell-pad-top: 8px; --table-cell-pad-right: 12px; --table-cell-pad-bottom: 8px; --table-cell-pad-left: 12px;
+  --table-radius: 30px; --table-border: 1px solid rgba(255, 255, 255, 0.40);
+  --table-row-bg-odd: rgba(255,255,255,0.02); --table-row-bg-even: transparent;
 
-    /* BodySmall */
-    --body-sm-size: 12px;
-    --body-sm-family: var(--font-sans);
-    --body-sm-weight: 400;
-    --body-sm-track: 0.25px;
-    --body-sm-line: 16px;
+  --thead-font-size: 16px; --thead-line-height: 16px; --thead-weight: 600; --thead-letter-spacing: 0.25px;
+  --thead-padding-y: 8px; --thead-padding-x: 12px; --thead-bg: rgba(255,255,255,0.04); --thead-border-bottom: none;
 
-    /* Label */
-    --label-size: 12px;
-    --label-family: var(--font-sans);
-    --label-weight: 400; /* undefined → regular */
-    --label-track: 0.25px;
-    --label-line: 16px;
+  --tab-height: 28px; --tab-radius: 64px; --tab-padding-y: 2px; --tab-padding-x: 10px; --tab-gap: 2px;
+  --tab-font-size: 12px; --tab-font-weight: 600; --tab-line-height: 16px; --tab-letter-spacing: 0.25px;
+  --tab-bg-active: var(--Secondary, #253243); --tab-bg-inactive: var(--SecondaryContainer, #1A2533); --tab-border: 1px solid var(--Outline);
 
-    /* Numbering */
-    --number-size: 20px;
-    --number-family: var(--font-sans);
-    --number-weight: 700;
-    --number-line: 32px;
+  --btn-primary-radius: 9px; --btn-primary-padding-y: 6px; --btn-primary-padding-x: 14px;
+  --btn-primary-font-size: 14px; --btn-primary-font-weight: 600;
+  --btn-primary-bg: var(--Secondary, #253243); --btn-primary-bg-hover: var(--OnSurfaceContainer, #C4C7C5); --btn-primary-color: var(--OnSecondary, #F6F7F7);
 
-    /* ==================== COLORS ==================== */
-    --OnSurfaceVariant: #7b8592;
-    --SurfaceContainer: #242426;
-    --OnSurfaceContainer: #c4c7c5;
-    --OnSurface: #e3e3e3;
-    --Secondary: #253243;
-    --OnSecondary: #f6f7f7;
-    --SecondaryContainer: #1a2533;
-    --OnSecondaryContainer: #6e7f95;
-    --TertiaryContainer: #112026;
-    --OnTertiary: #f5f6f6;
-    --OnTertiaryContainer: #6b7d83;
-    --Placeholder: #8c9799;
-    --Tonalcontainer: rgba(10, 14, 20, 0.5);
-    --Outline: rgba(255, 255, 255, 0.07);
-    --SurfaceBlur: rgba(255, 255, 255, 0.12);
-    --OnSurfaceBlur: rgba(255, 255, 255, 0.04);
+  --btn-ghost-radius: 16px; --btn-ghost-padding-y: 6px; --btn-ghost-padding-x: 14px;
+  --btn-ghost-font-size: 12px; --btn-ghost-font-weight: 600; --btn-ghost-border: 1px solid var(--Outline);
+  --btn-ghost-bg: transparent; --btn-ghost-bg-hover: rgba(255,255,255,0.05); --btn-ghost-color: var(--OnSurfaceContainer, #C4C7C5);
 
-    /* ==================== EFFECTS ==================== */
-    --shadow-1: 0 -0.318px 0.636px 0 rgba(255, 255, 255, 0.30) inset,
-    0 -0.318px 0.636px 0 rgba(255, 255, 255, 0.25) inset,
-    0.636px 0.955px 2.545px 0 rgba(0, 0, 0, 0.08) inset,
-    0.636px 0.955px 2.545px 0 rgba(0, 0, 0, 0.10) inset;
+  --btn-icon-size: 28px; --btn-icon-radius: 100px; --btn-icon-border: 1px solid var(--Outline); --btn-icon-bg: rgba(255,255,255,0.06); --btn-icon-color: var(--OnSurfaceContainer);
 
-    --shadow-2: 0 1.273px 2.545px 0 rgba(0, 0, 0, 0.10);
+  --modal-width: 280px; --modal-radius: 17px; --modal-bg: var(--SurfaceBlur, rgba(255,255,255,0.12));
+  --modal-border: 1px solid rgba(255, 255, 255, 0.40); --modal-shadow: var(--shadow-1); --modal-backdrop-blur: var(--blur-strong);
+  --modal-header-font-size: 16px; --modal-header-line-height: 20px; --modal-header-weight: 600; --modal-header-letter-spacing: 0.5px;
+  --modal-header-padding: 12px 12px 12px 16px; --modal-content-padding: 12px; --modal-footer-padding: 12px;
 
-    --blur-strong: blur(50px);
+  --login-card-width: 280px; --login-card-radius: 17px; --login-card-padding: 12px;
+  --login-input-height: 32px; --login-input-radius: 9px; --login-input-bg: var(--Tonalcontainer, rgba(10, 14, 20, 0.5));
+  --login-placeholder-color: var(--OnTertiaryContainer, #6B7D83); --login-gap: 16px;
 }

@@ -1,46 +1,6 @@
-.H1 {
-    font-size: var(--h1-size);
-    font-family: var(--h1-family);
-    font-weight: var(--h1-weight);
-    letter-spacing: var(--h1-track);
-    line-height: var(--h1-line);
-}
-
-.H2 {
-    font-size: var(--h2-size);
-    font-family: var(--h2-family);
-    font-weight: var(--h2-weight);
-    letter-spacing: var(--h2-track);
-    line-height: var(--h2-line);
-}
-
-.BodyMedium {
-    font-size: var(--body-md-size);
-    font-family: var(--body-md-family);
-    font-weight: var(--body-md-weight);
-    letter-spacing: var(--body-md-track);
-    line-height: var(--body-md-line);
-}
-
-.BodySmall {
-    font-size: var(--body-sm-size);
-    font-family: var(--body-sm-family);
-    font-weight: var(--body-sm-weight);
-    letter-spacing: var(--body-sm-track);
-    line-height: var(--body-sm-line);
-}
-
-.Label {
-    font-size: var(--label-size);
-    font-family: var(--label-family);
-    font-weight: var(--label-weight);
-    letter-spacing: var(--label-track);
-    line-height: var(--label-line);
-}
-
-.Numbering {
-    font-size: var(--number-size);
-    font-family: var(--number-family);
-    font-weight: var(--number-weight);
-    line-height: var(--number-line);
-}
+.H1{ font-size:var(--h1-size); font-family:var(--h1-family); font-weight:var(--h1-weight); letter-spacing:var(--h1-track); line-height:var(--h1-line); }
+.H2{ font-size:var(--h2-size); font-family:var(--h2-family); font-weight:var(--h2-weight); letter-spacing:var(--h2-track); line-height:var(--h2-line); }
+.BodyMedium{ font-size:var(--body-md-size); font-family:var(--body-md-family); font-weight:var(--body-md-weight); letter-spacing:var(--body-md-track); line-height:var(--body-md-line); }
+.BodySmall{ font-size:var(--body-sm-size); font-family:var(--body-sm-family); font-weight:var(--body-sm-weight); letter-spacing:var(--body-sm-track); line-height:var(--body-sm-line); }
+.Label{ font-size:var(--label-size); font-family:var(--label-family); font-weight:var(--label-weight); letter-spacing:var(--label-track); line-height:var(--label-line); }
+.Numbering{ font-size:var(--number-size); font-family:var(--number-family); font-weight:var(--number-weight); line-height:var(--number-line); }
